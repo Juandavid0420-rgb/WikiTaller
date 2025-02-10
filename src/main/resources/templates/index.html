@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/css/style.css" rel="stylesheet" />
+    <style>
+        
+body {
+    background-color: #dcdcdc; /* Gris claro */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Centra el contenido verticalmente */
+}
+
+/* Estilo para el contenedor del contenido */
+.content-container {
+    background-color: #b0c4de; /* Azul suave (Light Steel Blue) */
+    max-width: 900px;
+    width: 90%;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Ajustes para mejorar la tipografía */
+h1, h2, h3 {
+    color: #222; /* Texto más oscuro para contraste */
+}
+
+p {
+    color: #333; /* Gris oscuro para mejor legibilidad */
+    line-height: 1.6;
+}
+
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <ul>
+            <li><a th:href="@{/presentacion/view}">Presentación de integrantes</a></li>
+            <li><a th:href="@{/descripcion/view}">Descripcion del proyecto</a></li>
+            <li><a th:href="@{/requerimientos/view}">Requerimientos</a></li>
+            <li><a th:href="@{/arquitectura/view}">Arquitectura del proyecto</a></li>
+            <li><a th:href="@{/desarrollo/view}">Para el desarrollo</a></li>
+            <li><a th:href="@{/pruebas/view}">Pruebas</a></li>
+            <li><a th:href="@{/despliegue/view}">Despliegue</a></li>
+            <li><a th:href="@{/formulario/view}">Formulario</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="content-container">
+        <h1 class="titulo">Wiki proyecto</h1>
+        <h2>Index</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellat, recusandae consequatur aspernatur hic debitis ipsam alias exercitationem maiores ipsa tenetur temporibus accusantium officia ad, fugiat voluptatem quasi autem. Ea!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ducimus quas architecto odio accusamus ratione molestias repellendus aliquid quae ad, beatae animi minus reprehenderit perspiciatis quidem ipsam sed alias iure!</p>
+    </div>
+</body>
+</html>
+    
